@@ -318,8 +318,7 @@ ppdcSource::import_ppd(const char *f)	// I - Filename
 	     !ppdFindOption(ppd, attr->name + 7) &&
 	     strcmp(attr->name, "DefaultFont") &&
 	     strcmp(attr->name, "DefaultImageableArea") &&
-	     strcmp(attr->name, "DefaultPaperDimension") &&
-	     strcmp(attr->name, "DefaultFont"))
+	     strcmp(attr->name, "DefaultPaperDimension")
     {
       // Default attribute...
       driver->add_attr(new ppdcAttr(attr->name, attr->spec, attr->text,
