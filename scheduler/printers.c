@@ -1627,7 +1627,6 @@ cupsdSaveAllPrinters(void)
         ptr += strlen(ptr);
       }
 
-      *ptr = '\0';
       cupsFilePutConf(fp, "Attribute", value);
     }
 
@@ -1686,7 +1685,6 @@ cupsdSaveAllPrinters(void)
         ptr += strlen(ptr);
       }
 
-      *ptr = '\0';
       cupsFilePutConf(fp, "Attribute", value);
     }
 
@@ -1706,7 +1704,6 @@ cupsdSaveAllPrinters(void)
         ptr += strlen(ptr);
       }
 
-      *ptr = '\0';
       cupsFilePutConf(fp, "Attribute", value);
     }
 
